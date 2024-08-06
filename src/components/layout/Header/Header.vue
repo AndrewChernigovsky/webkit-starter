@@ -1,15 +1,16 @@
 <template>
   <header>
-    <nav>
-      <router-link active-class="active"  to="/">Catalog</router-link>
-      <router-link active-class="active"  to="/cart">Cart</router-link>
-      <router-link  active-class="active" to="/sellers">Sellers</router-link>
-    </nav>
+    <div class="container">
+      <nav>
+        <router-link active-class="active" to="/">Catalog</router-link>
+        <router-link active-class="active" to="/cart">Cart</router-link>
+        <router-link active-class="active" to="/sellers">Sellers</router-link>
+      </nav>
+    </div>
   </header>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style>
 nav {

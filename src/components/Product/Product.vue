@@ -34,7 +34,7 @@ const props = defineProps({
 .product {
   width: 350px;
   min-height: 300px;
-  background-color: $red;
+  background-color: $grey_504B4A;
   display: grid;
 
   &__image {

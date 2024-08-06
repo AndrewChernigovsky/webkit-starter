@@ -1,10 +1,18 @@
 <template>
-  <Header />
-  <router-view />
+  <div>
+    <Header />
+    <main class="main"><router-view /></main>
+    <Footer />
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { onMounted } from 'vue';
+import { startJS } from '@/custom/index';
 
-<style>
-/* Добавьте свои стили здесь */
-</style>
+onMounted(() => {
+  startJS();
+});
+</script>
+
+<style></style>

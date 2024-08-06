@@ -1,5 +1,5 @@
 <template>
-  <section class="products">
+  <section class="products container">
     <h2 class="secondary-title">Горячие закуски</h2>
     <ul class="products-list">
       <li v-for="product in products" :key="product.id">
