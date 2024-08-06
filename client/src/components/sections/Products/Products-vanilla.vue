@@ -1,0 +1,30 @@
+<template>
+  <section class="products">
+    <h2 class="secondary-title">Горячие закуски</h2>
+    <ul class="products-list">
+      <li v-for="product in products" :key="product.id">
+        <Product :product="product" />
+      </li>
+    </ul>
+  </section>
+</template>
+
+<script setup>
+import { ref, onMounted } from 'vue';
+import { fetchData } from '@/custom/data.js';
+const products = ref([]);
+
+const loadData = async () => {
+  const url = 'https://andrey-andreevich.ru/api.php';
+  products.value = await fetchData(url);
+};
+
+loadData();
+</script>
+
+<style lang="scss">
+.products-list {
+  display: flex;
+  gap: 10px;
+}
+</style>

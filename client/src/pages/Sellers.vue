@@ -1,0 +1,14 @@
+<template>
+  <div>
+    <h1>Sellers Page</h1>
+    <p>Here you can browse products.</p>
+  </div>
+</template>
+
+<script setup>
+// Здесь можно добавить логику, если это необходимо
+</script>
+
+<style>
+/* Добавьте стили для страницы каталога */
+</style>
