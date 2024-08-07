@@ -15,6 +15,11 @@ import { useDataStore } from '@/store/data';
 
 const dataStore = useDataStore();
 const products = ref([]);
+
+// ref[] это реактивная переменная внутри Vue
+// Нажми на путь ссылки ctrl+click <a href="https://playcode.io/1962764">
+// Тут я написал код для иммитации работы ref под капотом на виниле, чтобы было понимание того зачем это нужно
+
 const loadData = async () => {
   const url = 'https://andrey-andreevich.ru/api.php';
   await dataStore.fetchData(url);

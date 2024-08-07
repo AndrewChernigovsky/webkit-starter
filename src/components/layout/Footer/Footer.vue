@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <footer>
     <div class="container">
       <nav>
         <router-link active-class="active" to="/">Catalog</router-link>
@@ -7,7 +7,7 @@
         <router-link active-class="active" to="/sellers">Sellers</router-link>
       </nav>
     </div>
-  </header>
+  </footer>
 </template>
 
 <script setup></script>

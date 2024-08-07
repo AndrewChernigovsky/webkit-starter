@@ -2,6 +2,7 @@ import { createApp, defineAsyncComponent } from 'vue';
 import { createPinia } from 'pinia';
 import App from './App.vue';
 import router from './router';
+import sprite from './images/icons/sprite'
 
 const app = createApp(App);
 const pinia = createPinia();
@@ -16,6 +17,15 @@ for (const path in components) {
   app.component(componentName, defineAsyncComponent(components[path]));
 }
 
+const injectSprite = () => {
+  const div = document.createElement('div');
+  div.innerHTML = sprite;
+  document.body.appendChild(div);
+};
+
+injectSprite();
+
 app.use(router);
 app.use(pinia);
+app.use(sprite);
 app.mount('#app');

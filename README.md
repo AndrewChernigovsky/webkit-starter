@@ -1,3 +1,11 @@
+## Для подсветки синтаксиса и удобства разработки, установите расширение <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur</a>
+
+## Данные команды необходимо вводить в терминале. Если у вас установлен гит баш, то bash либо zch если макбук.
+
+## <a href="https://fuzzy-flannel-6d7.notion.site/GIT-b5247605f48649b2b2029cdf172b4055?pvs=74">Как установить гит баш, работа с гит</a>
+
+## <a href="https://fuzzy-flannel-6d7.notion.site/4734c31befef47b9ba3b402f93c50c3e?pvs=74">Памятка по работе над проектом и ресурсы необходимые для изучения</a>
+
 # Шаг 1
 Установить pnpm <br/>
 ## <strong>npm i pnpm  -g</strong><br/>

@@ -9,7 +9,7 @@
     />
 
     <div class="product__info">
-      <h3>{{ product.title }}</h3>
+      <h3 class="product__title third-title">{{ product.title }}</h3>
       <p>
         Вес: <span>{{ product.weight }}</span> кг
       </p>
@@ -34,7 +34,7 @@ const props = defineProps({
 .product {
   width: 350px;
   min-height: 300px;
-  background-color: $grey_504B4A;
+  background-color: $GREY_504B4A;
   display: grid;
 
   &__image {
@@ -45,6 +45,10 @@ const props = defineProps({
 
   &__info {
     padding: 10px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
   }
 }
 </style>
