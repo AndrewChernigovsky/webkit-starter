@@ -20,6 +20,7 @@ for (const path in components) {
 const injectSprite = () => {
   const div = document.createElement('div');
   div.innerHTML = sprite;
+  div.classList.add('visually-hidden');
   document.body.appendChild(div);
 };
 
